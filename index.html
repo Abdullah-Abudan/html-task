@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--  دعم اللغة وضبط الحروف-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--للتأكد من أن مواقع الويب ستبدو جيدة على أجهزة الجوال -->
+    <link rel="icon" href="https://png.pngtree.com/png-vector/20190118/ourlarge/pngtree-factory-line-filled-icon-png-image_324900.jpg"> <!-- ايقونة-->
+    <title>Form</title>
+    <style> /* حاولت تجنب استخدام السي اس اس والالتزام بالاتش تي ام ال فقط*/
+        body{
+            border: 1px solid #000;
+            padding: 10px 5px 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header> 
+    <h1>Basic HTML Form</h1>
+    </header>
+
+<section>
+    <fieldset> <!-- حقل ادخال بداخله البيانات-->
+        <legend>Name</legend> <!--عنوان للحقل-->
+        <form action="#">
+            <label for="FN">First Name</label>
+            <br> <!-- تم وضع البريك للنزول على سطر جديد--> 
+            <input type="text" id="Fn">
+
+            <br> <br> <!-- استخدام البادينغ أو المارجن أفضل طبعاً لكني ملتزم بالاتش تي ام ال-->
+
+            <label for="FN">Last Name</label> <!-- تم وضع الفور مع اي دي الانبت لربطهم مع بعض-->
+            <br> 
+            <input type="text" id="Ln">
+        </form>
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Other Questions</legend>
+        <form action="#">
+            <br>
+            <label>Choose A Drink:</label>
+            <br>
+            <input type="radio" name="Drink" id="Coff" value="Coffe">
+            <label for="Coff">Coffe</label>
+            <br>
+            <input type="radio" name="Drink" id="Tea" value="Tea">
+            <label for="Tea">Tea</label>
+            <br>
+            <input type="radio" name="Drink" id="HC" value="Hot Chocolate">
+            <label for="HC">Hot Chocolate</label>
+            <br> <br>
+            <label>What ice cream do you like?</label> <br>
+            <input type="checkbox" name="ice cream" id="ch" value="chocolate">
+            <label for="ch">chocolate</label> <br>
+            <input type="checkbox" name="ice cream" id="cp" value="chocolate pudding">
+            <label for="cp">chocolate pudding</label> <br>
+            <input type="checkbox" name="ice cream" id="cb" value="chocolate peanut butter">
+            <label for="cb">chocolate peanut butter</label> <br>
+            <input type="checkbox" name="ice cream" id="va" value="vanilla">
+            <label for="va">vanilla</label> <br>
+            <input type="checkbox" name="ice cream" id="st" value="straeberry">
+            <label for="st">straeberry</label> <br> <br>
+        </form>
+        <label for="sc">Select a school:</label> <br>
+        <select name="School" id="sc"> <!-- هناك خصائص عدة مثل الملتيبل لكني لن أستخدمها وسأعمل حسب الشكل المطلوب في السؤال فقط-->
+            <option value="">Harvard</option> <!-- الفاليو غير مهم تحديده في هاي الحالة لأن التاق له محتوى وليس كما الانبت-->
+            <option value="">cambridge</option>
+        </select>
+        <br> <br>
+        <label for="txt">Please Provide Comments:</label>
+        <br>
+        <textarea name="" id="" cols="60" rows="8"></textarea> <!-- جزء من الفورم لكنها تكون خارجه كما السيليكت تاق-->
+        <br> <br>
+    </fieldset>
+</section>
+    <br>
+    <footer> 
+        <button type="submit">Submit</button>
+    </footer>
+</body>
+</html>
